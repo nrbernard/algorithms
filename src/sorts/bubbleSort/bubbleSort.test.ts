@@ -1,6 +1,6 @@
 import { beforeAll, describe, expect, test } from 'vitest';
 
-const names = ['nick'];
+const names = ['nick', 'tj'];
 const functionName = 'bubbleSort';
 
 names.forEach((name) => {
@@ -13,7 +13,7 @@ names.forEach((name) => {
     sortFunction = module[functionName];
   });
 
-  describe(name, () => {
+  describe(`${functionName} by ${name}`, () => {
     test('it sorts the array when the input array is already sorted', () => {
       expect(sortFunction([1, 2, 3, 4, 5])).toEqual([1, 2, 3, 4, 5]);
     });
