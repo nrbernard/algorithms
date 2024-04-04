@@ -1,5 +1,4 @@
 export function bubbleSort(array: number[]): number[] {
-  // This is a placeholder for the bubble sort implementation
   const outputArray = [...array];
 
   for(let i = 0; i < outputArray.length; i++) {
