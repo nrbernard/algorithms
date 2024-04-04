@@ -33,5 +33,9 @@ names.forEach((name) => {
     test('it sorts the array when the input array is empty', () => {
       expect(sortFunction([])).toEqual([]);
     });
+
+    test('it sorts the array when there are negative numbers', () => {
+      expect(sortFunction([5, 3, 4, 5, -3])).toEqual([-3, 3, 4, 5, 5]);
+    });
   });
 });
